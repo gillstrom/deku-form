@@ -15,12 +15,12 @@ $ npm install --save deku-form
 ```js
 import {Form, InputField} from 'deku-form';
 
-export function render() {
-	function handle(data, form) {
-		console.log(data);
-		//=> 'username=foo&password=unicorn'
-	}
+function handle(data, form) {
+	console.log(data);
+	//=> 'username=foo&password=unicorn'
+}
 
+export function render() {
 	return (
 		<Form onSubmit={handle}>
 			<InputField name="username" label="Username" required/>
