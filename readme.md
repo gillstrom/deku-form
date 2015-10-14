@@ -23,9 +23,9 @@ function handle(data, form) {
 export function render() {
 	return (
 		<Form onSubmit={handle}>
-			<InputField name="username" label="Username" required/>
-			<InputField name="password" label="Password" minLength="6" required/>
-			<button type="submit">Sign in</button>
+			<InputField name='username' label='Username' required/>
+			<InputField name='password' label='Password' minLength='6' required/>
+			<button type='submit'>Sign in</button>
 		</Form>
 	);
 }
